@@ -1,0 +1,147 @@
+/** ESTILIZANDO O CORPO COMPLETO E A FONTE **/
+*{
+    font-family: "Roboto";
+    padding: 0;
+    margin: 0;
+}
+
+#nav{
+    box-shadow: 1px 1px 1px rgb(43, 43, 43);
+}
+
+/** ESTILIZANDO LOGO DO CABEÇALHO **/
+
+#navbar img{
+    max-width: 50px;
+}
+
+/** ESTILIZANDO DIV APÓS CABEÇALHO (TÍTULO DA PÁGINA) **/
+
+.bemVindo{
+    position: relative;
+    height: 200px;
+    background: linear-gradient(rgba(2,3,4, .5), rgba(5,6,7, .8)), url(img/imagem2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/** ESTILIZANDO DIV FILHA APÓS CABEÇALHO TÍTULO DA PÁGINA **/
+
+.bemVindo #titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 120px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    left: 0;
+    background: linear-gradient(rgba(2,3,4, .5), rgba(5,6,7, .8));   
+}
+
+/** ESTILIZANDO APENAS O TÍTULO (BEM VINDO!) **/
+
+.bemVindo h1{
+    text-align: center;
+    color: white;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 40px;
+    margin: 0;
+}    
+ 
+/** ESTILIZANDO DIV QUE SEPARA O CONTEÚDO DO TÍTULO E CABEÇALHO **/
+
+.separaConteudo{
+    width: 100%;
+    height: 7px;
+    background:rgb(243, 243, 243)  
+}
+
+/** ESTILIZANDO IMAGEM (LOGO DO SITE) **/
+
+.logotipo{
+    width: 510px;
+}
+
+/** ESTILIZANDO A SECTION PRINCIPAL E AS DIVS FILHAS (ONDE ESTÃO OS CONTEÚDOS) **/
+
+.principal{
+    display: flex;
+}
+.container{
+    width: 50%;
+    display: inline-block;
+}
+
+#corpo1{
+    background-color: black;
+    color: #fff; 
+    text-align: center;
+}
+#corpo2{
+    background-color: rgb(0, 0, 0);
+}
+
+/** ESTILIZANDO O TÍTULO H2 -> TÍTULO QUE APRESENTA O SISTEMA**/
+
+h2{
+    margin: 40px 10px 10px 30px;
+}
+
+/** ESTILIZANDO FORMULÁRIO**/
+
+legend, fieldset{
+    padding: 10px;
+    color: white;
+}
+
+legend{
+    text-align: center;
+    background-color: rgb(0, 47, 94);
+}
+
+form{
+    max-width: 550px;
+    margin: 40px 10px 10px 30px;
+}
+
+.inputGeral{
+    position: relative;
+}
+/** ESTILIZANDO LABEL FORMULÁRIO**/
+
+label{
+    color: #fff;
+    position: absolute;
+    transition: .5s;
+    top: 0px;
+    left: 0px;
+}
+
+/** ESTILIZANDO LABEL QUANDO INPUT É FOCADO**/
+
+.inputs:focus ~ .labels, 
+.inputs:valid ~ .labels{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(0, 82, 163); 
+}
+
+/** ESTILIZANDO INPUTS**/
+
+.inputs{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white ;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+}
+
