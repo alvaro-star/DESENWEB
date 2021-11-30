@@ -17,17 +17,17 @@
 <body>
 <div class="login">
 <main class="form-signin">
-  <form>
+  <form action = "fazerlogin.php" method = "POST">
     <img class="mb-4 img" src="img/logo.gif" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
+      <input type="cpf" class="form-control" id="floatingInput" name = "cpf" placeholder="name@example.com">
+      <label for="cpf">Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
+      <input type="senha" class="form-control" id="floatingPassword" name = "senha" placeholder="Password">
+      <label for="senha">Password</label>
     </div>
 
     <div class="checkbox mb-3">
